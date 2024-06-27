@@ -6,6 +6,7 @@ body {
   background-color: gray;
   font-family: system-ui, sans-serif;
   margin: 0;
+  display: block;
 }
 
 nav {
@@ -17,11 +18,13 @@ nav {
 
 #destinations {
   display: flex;
-  gap: 10px;
+  gap: 16px;
+  align-items: center;
 }
 #actions {
   display: flex;
-  gap: 10px;
+  gap: 16px;
+  align-items: center;
 }
 p {
   margin: 0;
@@ -32,6 +35,10 @@ section {
   background-color: black;
   color: white;
   padding: 24px 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 h1,
@@ -48,6 +55,10 @@ h2 {
   font-size: 16px;
   margin-bottom: 0;
 }
+h3 {
+  margin: 0px;
+}
+
 
 input {
   height: 58px;
@@ -60,7 +71,11 @@ input {
 
 main {
   background-color: white;
-  padding: 16px 72px;
+  padding: 32px 72px;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav button {
@@ -74,17 +89,15 @@ nav button {
 
 .img-placeholder {
   width: 355px;
-  height: 600px;
+  height: 270px;
   background-color: gray;
   border-radius: 8px;
-}
+}     
 
 .card-footer {
   font-size: 14px;
-}
-
-.card-footer * {
-  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #subnav {
@@ -110,14 +123,16 @@ nav button {
 
 #trending {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  gap: 12px;
 }
 
 #hero {
-  justify-content: center;
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: space-around;
+
 }
 #sort {
   display: flex;
